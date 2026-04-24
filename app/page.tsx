@@ -25,22 +25,26 @@ export default function ComingSoon() {
       <p className="mb-6 text-lg">order via</p>
 
       <div className="flex items-center gap-6">
-        <div className="rounded-xl p-4 w-20 h-20 relative flex items-center justify-center">
-          <Image
-            src="/pickme.png"
-            alt="PickMe"
-            fill
-            className="object-contain p-1"
-          />
+        <div className="gradient-border">
+          <div className="inner-box">
+            <Image
+              src="/pickme.png"
+              alt="PickMe"
+              fill
+              className="object-contain p-1 rounded-2xl"
+            />
+          </div>
         </div>
 
-        <div className="rounded-xl p-4 w-20 h-20 relative flex items-center justify-center">
-          <Image
-            src="/ubereats.png"
-            alt="Uber Eats"
-            fill
-            className="object-contain p-1"
-          />
+        <div className="gradient-border">
+          <div className="inner-box">
+            <Image
+              src="/ubereats.png"
+              alt="Uber Eats"
+              fill
+              className="object-contain p-1 rounded-2xl"
+            />
+          </div>
         </div>
       </div>
 
