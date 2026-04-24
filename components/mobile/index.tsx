@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 export default function ComingSoonMobile() {
   return (
     <div className="lg:hidden relative min-h-screen bg-[#804097] flex flex-col items-center text-white text-center px-4">
+      
       <motion.div
         className="mt-20 md:mt-0 md:mb-8"
         initial={{ opacity: 0, y: -20 }}
@@ -21,19 +22,19 @@ export default function ComingSoonMobile() {
         />
       </motion.div>
 
-      <div className="flex flex-col items-center justify-center flex-1">
-        <motion.h2
-          className="text-3xl md:text-5xl tracking-widest mb-6 text-white"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-        >
-          <span className="text-shadow-soft">FRESH TASTE</span>{" "}
-          <span className="block md:inline italic font-bold text-shadow-strong">
-            COMING SOON
-          </span>
-        </motion.h2>
+      <motion.h2
+        className="text-3xl md:text-5xl tracking-widest mt-28 mb-6 text-white"
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+      >
+        <span className="text-shadow-soft">FRESH TASTE</span>{" "}
+        <span className="block md:inline italic font-bold text-shadow-strong">
+          COMING SOON
+        </span>
+      </motion.h2>
 
+      <div className="flex flex-col items-center justify-center flex-1">
         <motion.p
           className="mb-6 text-lg"
           initial={{ opacity: 0 }}
@@ -57,10 +58,6 @@ export default function ComingSoonMobile() {
               opacity: 1,
               x: [0, -3, 3, -2, 2, 0],
             }}
-            transition={{
-              scale: { duration: 0.5, ease: "easeOut", delay: 0.3 },
-              x: { delay: 0.9, duration: 0.4 },
-            }}
           >
             <div className="inner-box">
               <Image
@@ -79,10 +76,6 @@ export default function ComingSoonMobile() {
               scale: 1,
               opacity: 1,
               x: [0, 3, -3, 2, -2, 0],
-            }}
-            transition={{
-              scale: { duration: 0.5, ease: "easeOut", delay: 0.4 },
-              x: { delay: 1.0, duration: 0.4 },
             }}
           >
             <div className="inner-box">
