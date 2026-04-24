@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ComingSoon() {
   return (
-    <div className="min-h-screen bg-purple-700 flex flex-col items-center justify-center text-white text-center">
+    <div className="inset-0 min-h-screen bg-purple-700 flex flex-col items-center justify-center text-white text-center">
       <div className="mb-8">
         <Image
           src="/brand-logo.png"
@@ -17,7 +17,7 @@ export default function ComingSoon() {
 
       <h2 className="text-3xl md:text-5xl tracking-widest mb-6 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">
         FRESH TASTE{" "}
-        <span className="italic font-bold drop-shadow-[0_0_20px_rgba(255,255,255,0.8)]">
+        <span className="block md:inline italic font-bold drop-shadow-[0_0_20px_rgba(255,255,255,0.8)]">
           COMING SOON
         </span>
       </h2>
@@ -25,7 +25,7 @@ export default function ComingSoon() {
       <p className="mb-6 text-lg">order via</p>
 
       <div className="flex items-center gap-6">
-        <div className="bg-white rounded-xl p-4 w-20 h-20 relative flex items-center justify-center">
+        <div className="rounded-xl p-4 w-20 h-20 relative flex items-center justify-center">
           <Image
             src="/pickme.png"
             alt="PickMe"
@@ -34,7 +34,7 @@ export default function ComingSoon() {
           />
         </div>
 
-        <div className="bg-green-500 rounded-xl p-4 w-20 h-20 relative flex items-center justify-center">
+        <div className="rounded-xl p-4 w-20 h-20 relative flex items-center justify-center">
           <Image
             src="/ubereats.png"
             alt="Uber Eats"
