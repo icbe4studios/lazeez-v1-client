@@ -7,7 +7,7 @@ export default function ComingSoonMobile() {
   return (
     <div className="lg:hidden relative min-h-screen bg-[#804097] flex flex-col items-center text-white text-center px-4">
       <motion.div
-        className="mt-6 md:mt-0 md:mb-8"
+        className="mt-12 md:mt-0 md:mb-8"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
