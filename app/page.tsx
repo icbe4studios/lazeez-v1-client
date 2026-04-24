@@ -42,7 +42,7 @@ export default function ComingSoon() {
         <Image
           src="/mascot.png"
           alt="Mascot"
-          width={120}
+          width={780}
           height={120}
         />
       </div>
