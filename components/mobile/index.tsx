@@ -13,7 +13,6 @@ export default function ComingSoonMobile() {
 
   return (
     <div className="lg:hidden relative min-h-screen bg-[#804097] flex flex-col items-center text-white text-center px-4">
-      {/* Logo */}
       <div className="mt-6 md:mt-0 md:mb-8">
         <Image
           src="/brand-logo.png"
@@ -24,7 +23,6 @@ export default function ComingSoonMobile() {
         />
       </div>
 
-      {/* Center */}
       <div className="flex flex-col items-center justify-center flex-1">
         <h2 className="text-3xl md:text-5xl tracking-widest mb-6 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">
           FRESH TASTE{" "}
@@ -60,9 +58,7 @@ export default function ComingSoonMobile() {
         </div>
       </div>
 
-      {/* Mascot */}
       <div className="mt-auto flex items-center justify-center gap-2 pb-6 md:pb-0 overflow-hidden">
-        {/* Left enters from left */}
         <div
           className={`transition-all duration-700 ease-out ${
             showMascot
@@ -78,7 +74,6 @@ export default function ComingSoonMobile() {
           />
         </div>
 
-        {/* Center (no animation) */}
         <div className="opacity-100">
           <Image
             src="/mascot-part-2.png"
@@ -88,7 +83,6 @@ export default function ComingSoonMobile() {
           />
         </div>
 
-        {/* Right enters from right */}
         <div
           className={`transition-all duration-700 ease-out ${
             showMascot
