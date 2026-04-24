@@ -41,7 +41,7 @@ export default function ComingSoon() {
         </div>
       </div>
 
-      <div>
+      <div className="mt-10">
         <Image
           src="/mascot.png"
           alt="Mascot"
