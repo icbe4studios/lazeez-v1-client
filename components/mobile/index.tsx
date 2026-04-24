@@ -25,10 +25,8 @@ export default function ComingSoonMobile() {
 
       <div className="flex flex-col items-center justify-center flex-1">
         <h2 className="text-3xl md:text-5xl tracking-widest mb-6 text-white">
-          <span className="drop-shadow-[0_0_4px_rgba(255,255,255,1),0_0_10px_rgba(128,64,151,0.8),0_0_20px_rgba(128,64,151,0.5)]">
-            FRESH TASTE
-          </span>{" "}
-          <span className="block md:inline italic font-bold drop-shadow-[0_0_6px_rgba(255,255,255,1),0_0_14px_rgba(128,64,151,0.9),0_0_28px_rgba(128,64,151,0.6)]">
+          <span className="text-shadow-soft">FRESH TASTE</span>{" "}
+          <span className="block md:inline italic font-bold text-shadow-strong">
             COMING SOON
           </span>
         </h2>
