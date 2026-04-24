@@ -6,8 +6,13 @@ export default function ComingSoon() {
   return (
     <div className="min-h-screen bg-purple-700 flex flex-col items-center justify-center text-white text-center px-4">
       <div className="mb-8">
-        <h1 className="text-4xl font-bold tracking-wide">Lazeez</h1>
-        <p className="text-sm opacity-80">لذيذ</p>
+        <Image
+            src="/brand-logo.png"
+            alt="Brand Logo"
+            width={280}
+            height={60}
+            loading="eager"
+          />
       </div>
 
       <h2 className="text-3xl md:text-5xl font-semibold tracking-widest mb-6">
@@ -42,8 +47,9 @@ export default function ComingSoon() {
         <Image
           src="/mascot.png"
           alt="Mascot"
-          width={780}
-          height={120}
+          width={480}
+          height={60}
+          loading="eager"
         />
       </div>
     </div>
