@@ -15,8 +15,11 @@ export default function ComingSoon() {
         />
       </div>
 
-      <h2 className="text-3xl md:text-5xl font-semibold tracking-widest mb-6">
-        FRESH TASTE <span className="italic">COMING SOON</span>
+      <h2 className="text-3xl md:text-5xl tracking-widest mb-6 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">
+        FRESH TASTE{" "}
+        <span className="italic font-bold drop-shadow-[0_0_20px_rgba(255,255,255,0.8)]">
+          COMING SOON
+        </span>
       </h2>
 
       <p className="mb-6 text-lg">order via</p>
