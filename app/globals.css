@@ -31,7 +31,6 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 16px;
-  padding: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,11 +43,11 @@ body {
   inset: -2px;
   background: conic-gradient(
     from 0deg,
-    #ff00cc,
-    #3333ff,
-    #00ffcc,
-    #ffcc00,
-    #ff00cc
+    #f3e9f8,
+    #804097,
+    #e9d8f3,
+    #804097,
+    #f3e9f8
   );
   animation: spin 3s linear infinite;
   z-index: 0;
