@@ -79,11 +79,3 @@ body {
     transform: rotate(360deg);
   }
 }
-
-.text-shadow-soft {
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.35);
-}
-
-.text-shadow-strong {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.55);
-}
