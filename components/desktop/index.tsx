@@ -44,11 +44,24 @@ export default function ComingSoonDesktop() {
 
       <motion.div
         className="flex items-center gap-6"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.2 }}
       >
-        <div className="gradient-border">
+        {/* PickMe */}
+        <motion.div
+          className="gradient-border"
+          initial={{ scale: 0.6, opacity: 0 }}
+          animate={{
+            scale: 1,
+            opacity: 1,
+            x: [0, -3, 3, -2, 2, 0], // vibration
+          }}
+          transition={{
+            scale: { duration: 0.5, ease: "easeOut", delay: 0.3 },
+            x: { delay: 0.9, duration: 0.4 },
+          }}
+        >
           <div className="inner-box">
             <Image
               src="/pickme.png"
@@ -57,9 +70,22 @@ export default function ComingSoonDesktop() {
               className="object-contain p-1 rounded-2xl"
             />
           </div>
-        </div>
+        </motion.div>
 
-        <div className="gradient-border">
+        {/* Uber Eats */}
+        <motion.div
+          className="gradient-border"
+          initial={{ scale: 0.6, opacity: 0 }}
+          animate={{
+            scale: 1,
+            opacity: 1,
+            x: [0, 3, -3, 2, -2, 0], // vibration opposite
+          }}
+          transition={{
+            scale: { duration: 0.5, ease: "easeOut", delay: 0.4 },
+            x: { delay: 1.0, duration: 0.4 },
+          }}
+        >
           <div className="inner-box">
             <Image
               src="/ubereats.png"
@@ -68,7 +94,7 @@ export default function ComingSoonDesktop() {
               className="object-contain p-1 rounded-2xl"
             />
           </div>
-        </div>
+        </motion.div>
       </motion.div>
 
       <div className="mt-10 flex items-center justify-center gap-2 overflow-hidden">
