@@ -1,19 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export default function ComingSoonMobile() {
-  const [showMascot, setShowMascot] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setShowMascot(true), 300);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="lg:hidden relative min-h-screen bg-[#804097] flex flex-col items-center text-white text-center px-4">
-      <div className="mt-6 md:mt-0 md:mb-8">
+      <motion.div
+        className="mt-6 md:mt-0 md:mb-8"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <Image
           src="/brand-logo.png"
           alt="Brand Logo"
@@ -21,19 +19,36 @@ export default function ComingSoonMobile() {
           height={60}
           loading="eager"
         />
-      </div>
+      </motion.div>
 
       <div className="flex flex-col items-center justify-center flex-1">
-        <h2 className="text-3xl md:text-5xl tracking-widest mb-6 text-white">
+        <motion.h2
+          className="text-3xl md:text-5xl tracking-widest mb-6 text-white"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+        >
           <span className="text-shadow-soft">FRESH TASTE</span>{" "}
           <span className="block md:inline italic font-bold text-shadow-strong">
             COMING SOON
           </span>
-        </h2>
+        </motion.h2>
 
-        <p className="mb-6 text-lg">order via</p>
+        <motion.p
+          className="mb-6 text-lg"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+        >
+          order via
+        </motion.p>
 
-        <div className="flex items-center gap-6">
+        <motion.div
+          className="flex items-center gap-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+        >
           <div className="gradient-border">
             <div className="inner-box">
               <Image
@@ -55,16 +70,14 @@ export default function ComingSoonMobile() {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div className="mt-auto flex items-center justify-center gap-2 pb-6 md:pb-0 overflow-hidden">
-        <div
-          className={`transition-all duration-700 ease-out ${
-            showMascot
-              ? "translate-x-0 opacity-100"
-              : "-translate-x-20 opacity-0"
-          }`}
+        <motion.div
+          initial={{ x: -60, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.6 }}
         >
           <Image
             src="/mascot-part-1.png"
@@ -72,23 +85,25 @@ export default function ComingSoonMobile() {
             width={80}
             height={60}
           />
-        </div>
+        </motion.div>
 
-        <div className="opacity-100">
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.7 }}
+        >
           <Image
             src="/mascot-part-2.png"
             alt="Mascot part 2"
             width={80}
             height={100}
           />
-        </div>
+        </motion.div>
 
-        <div
-          className={`transition-all duration-700 ease-out ${
-            showMascot
-              ? "translate-x-0 opacity-100"
-              : "translate-x-20 opacity-0"
-          }`}
+        <motion.div
+          initial={{ x: 60, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.6 }}
         >
           <Image
             src="/mascot-part-3.png"
@@ -96,7 +111,7 @@ export default function ComingSoonMobile() {
             width={80}
             height={60}
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

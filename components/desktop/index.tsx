@@ -1,19 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export default function ComingSoonDesktop() {
-  const [showMascot, setShowMascot] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setShowMascot(true), 300);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="hidden lg:flex inset-0 min-h-screen bg-[#804097] flex-col items-center justify-center text-white text-center">
-      <div className="mb-8">
+      <motion.div
+        className="mb-8"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <Image
           src="/brand-logo.png"
           alt="Brand Logo"
@@ -21,18 +19,35 @@ export default function ComingSoonDesktop() {
           height={60}
           loading="eager"
         />
-      </div>
+      </motion.div>
 
-      <h2 className="text-3xl md:text-5xl tracking-widest mb-6 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">
+      <motion.h2
+        className="text-3xl md:text-5xl tracking-widest mb-6 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+      >
         FRESH TASTE{" "}
         <span className="italic font-bold drop-shadow-[0_0_20px_rgba(255,255,255,0.8)]">
           COMING SOON
         </span>
-      </h2>
+      </motion.h2>
 
-      <p className="mb-6 text-lg">order via</p>
+      <motion.p
+        className="mb-6 text-lg"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.4 }}
+      >
+        order via
+      </motion.p>
 
-      <div className="flex items-center gap-6">
+      <motion.div
+        className="flex items-center gap-6"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+      >
         <div className="gradient-border">
           <div className="inner-box">
             <Image
@@ -54,15 +69,13 @@ export default function ComingSoonDesktop() {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <div className="mt-10 flex items-center justify-center gap-2 overflow-hidden">
-        <div
-          className={`transition-all duration-700 ease-out ${
-            showMascot
-              ? "translate-x-0 opacity-100"
-              : "-translate-x-24 opacity-0"
-          }`}
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
         >
           <Image
             src="/mascot-part-1.png"
@@ -71,9 +84,13 @@ export default function ComingSoonDesktop() {
             height={60}
             loading="eager"
           />
-        </div>
+        </motion.div>
 
-        <div className="opacity-100">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+        >
           <Image
             src="/mascot-part-2.png"
             alt="Mascot part 2"
@@ -81,14 +98,12 @@ export default function ComingSoonDesktop() {
             height={60}
             loading="eager"
           />
-        </div>
+        </motion.div>
 
-        <div
-          className={`transition-all duration-700 ease-out ${
-            showMascot
-              ? "translate-x-0 opacity-100"
-              : "translate-x-24 opacity-0"
-          }`}
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
         >
           <Image
             src="/mascot-part-3.png"
@@ -97,7 +112,7 @@ export default function ComingSoonDesktop() {
             height={60}
             loading="eager"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
