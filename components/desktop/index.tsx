@@ -48,14 +48,13 @@ export default function ComingSoonDesktop() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.2 }}
       >
-        {/* PickMe */}
         <motion.div
           className="gradient-border"
           initial={{ scale: 0.6, opacity: 0 }}
           animate={{
             scale: 1,
             opacity: 1,
-            x: [0, -3, 3, -2, 2, 0], // vibration
+            x: [0, -3, 3, -2, 2, 0],
           }}
           transition={{
             scale: { duration: 0.5, ease: "easeOut", delay: 0.3 },
@@ -72,14 +71,13 @@ export default function ComingSoonDesktop() {
           </div>
         </motion.div>
 
-        {/* Uber Eats */}
         <motion.div
           className="gradient-border"
           initial={{ scale: 0.6, opacity: 0 }}
           animate={{
             scale: 1,
             opacity: 1,
-            x: [0, 3, -3, 2, -2, 0], // vibration opposite
+            x: [0, 3, -3, 2, -2, 0],
           }}
           transition={{
             scale: { duration: 0.5, ease: "easeOut", delay: 0.4 },

@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 export default function ComingSoonMobile() {
   return (
     <div className="lg:hidden relative min-h-screen bg-[#804097] flex flex-col items-center text-white text-center px-4">
-      
       <motion.div
         className="mt-20 md:mt-0 md:mb-8"
         initial={{ opacity: 0, y: -20 }}
@@ -58,6 +57,10 @@ export default function ComingSoonMobile() {
               opacity: 1,
               x: [0, -3, 3, -2, 2, 0],
             }}
+            transition={{
+              scale: { duration: 0.5, ease: "easeOut", delay: 0.3 },
+              x: { delay: 0.9, duration: 0.4 },
+            }}
           >
             <div className="inner-box">
               <Image
@@ -76,6 +79,10 @@ export default function ComingSoonMobile() {
               scale: 1,
               opacity: 1,
               x: [0, 3, -3, 2, -2, 0],
+            }}
+            transition={{
+              scale: { duration: 0.5, ease: "easeOut", delay: 0.4 },
+              x: { delay: 1.0, duration: 0.4 },
             }}
           >
             <div className="inner-box">
