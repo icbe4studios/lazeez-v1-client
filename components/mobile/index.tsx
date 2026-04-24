@@ -54,19 +54,19 @@ export default function ComingSoonMobile() {
         <Image
           src="/mascot-part-1.png"
           alt="Mascot part 1"
-          width={160}
+          width={80}
           height={60}
         />
         <Image
           src="/mascot-part-2.png"
           alt="Mascot part 2"
-          width={160}
-          height={60}
+          width={80}
+          height={100}
         />
         <Image
           src="/mascot-part-3.png"
           alt="Mascot part 3"
-          width={160}
+          width={80}
           height={60}
         />
       </div>
