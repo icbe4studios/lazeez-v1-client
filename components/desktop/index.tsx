@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ComingSoonDesktop() {
   return (
-    <div className="hidden lg:block inset-0 min-h-screen bg-[#804097] flex-col items-center justify-center text-white text-center">
+    <div className="hidden inset-0 min-h-screen bg-[#804097] lg:flex flex-col items-center justify-center text-white text-center">
       <div className="mb-8">
         <Image
           src="/brand-logo.png"
