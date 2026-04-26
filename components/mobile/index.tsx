@@ -30,7 +30,7 @@ export default function ComingSoonMobile() {
       </motion.div>
 
       <motion.h2
-        className="text-3xl md:text-5xl tracking-widest mt-12 mb-6 text-white"
+        className="text-3xl md:text-5xl tracking-widest mt-14 mb-6 text-white"
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, delay: 0.2 }}
@@ -106,7 +106,7 @@ export default function ComingSoonMobile() {
       </div>
 
       <motion.div
-        className="flex items-center gap-4 mt-10"
+        className="flex items-center gap-4 mt-8"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6 }}
