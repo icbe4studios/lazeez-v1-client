@@ -2,10 +2,18 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTiktok,
+  FaYoutube,
+} from "react-icons/fa";
+import { FaThreads } from "react-icons/fa6";
 
 export default function ComingSoonDesktop() {
   return (
-    <div className="hidden lg:flex inset-0 min-h-screen bg-[#804097] flex-col items-center justify-center text-white text-center">
+    <div className="hidden lg:flex inset-0 min-h-screen bg-[#804097] flex-col items-center justify-center text-white text-center py-4">
       <motion.div
         className="mb-8"
         initial={{ opacity: 0, y: -20 }}
@@ -22,7 +30,7 @@ export default function ComingSoonDesktop() {
       </motion.div>
 
       <motion.h2
-        className="text-3xl md:text-5xl tracking-widest mb-6 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+        className="text-3xl md:text-5xl tracking-widest mb-4 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, delay: 0.2 }}
@@ -34,7 +42,7 @@ export default function ComingSoonDesktop() {
       </motion.h2>
 
       <motion.p
-        className="mb-6 text-lg"
+        className="mb-4 text-lg"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
@@ -43,7 +51,7 @@ export default function ComingSoonDesktop() {
       </motion.p>
 
       <motion.div
-        className="flex items-center gap-6"
+        className="flex items-center gap-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.2 }}
@@ -95,7 +103,99 @@ export default function ComingSoonDesktop() {
         </motion.div>
       </motion.div>
 
-      <div className="mt-10 flex items-center justify-center gap-2 overflow-hidden">
+      <motion.div
+        className="mt-4 flex items-center gap-6"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.6 }}
+      >
+        <motion.div
+          className="mt-4 flex items-center gap-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+        >
+          <motion.a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white rounded-full"
+          >
+            <div className="w-10 h-10 rounded-full flex items-center justify-center text-[#804097] text-xl">
+              <FaInstagram />
+            </div>
+          </motion.a>
+
+          <motion.a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white rounded-full"
+          >
+            <div className="w-10 h-10 rounded-full flex items-center justify-center text-[#804097] text-xl">
+              <FaFacebookF />
+            </div>
+          </motion.a>
+
+          <motion.a
+            href="https://tiktok.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white rounded-full"
+          >
+            <div className="w-10 h-10 rounded-full flex items-center justify-center text-[#804097] text-xl">
+              <FaTiktok />
+            </div>
+          </motion.a>
+
+          <motion.a
+            href="https://youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white rounded-full"
+          >
+            <div className="w-10 h-10 rounded-full flex items-center justify-center text-[#804097] text-xl">
+              <FaYoutube />
+            </div>
+          </motion.a>
+
+          <motion.a
+            href="https://Linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white rounded-full"
+          >
+            <div className="w-10 h-10 rounded-full flex items-center justify-center text-[#804097] text-xl">
+              <FaLinkedinIn />
+            </div>
+          </motion.a>
+
+          <motion.a
+            href="https://Threads.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white rounded-full"
+          >
+            <div className="w-10 h-10 rounded-full flex items-center justify-center text-[#804097] text-xl">
+              <FaThreads />
+            </div>
+          </motion.a>
+        </motion.div>
+      </motion.div>
+
+      <div className="mt-8 flex items-center justify-center gap-2 overflow-hidden">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
