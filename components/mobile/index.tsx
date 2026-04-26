@@ -197,7 +197,7 @@ export default function ComingSoonMobile() {
         </motion.div>
       </motion.div>
 
-      <div className="mt-auto flex items-center justify-center gap-2 py-14 overflow-hidden">
+      <div className="mt-auto flex items-center justify-center gap-2 py-10 overflow-hidden">
         <motion.div
           initial={{ x: -60, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
