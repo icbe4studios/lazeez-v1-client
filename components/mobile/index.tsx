@@ -183,7 +183,7 @@ export default function ComingSoonMobile() {
           </motion.a>
 
           <motion.a
-            href="hhttps://www.threads.com/@lazeez__ae"
+            href="https://www.threads.com/@lazeez__ae"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
