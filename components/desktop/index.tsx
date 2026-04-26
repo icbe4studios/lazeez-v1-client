@@ -116,7 +116,7 @@ export default function ComingSoonDesktop() {
           transition={{ delay: 0.6 }}
         >
           <motion.a
-            href="https://instagram.com"
+            href="https://www.instagram.com/lazeez__ae"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
@@ -129,7 +129,7 @@ export default function ComingSoonDesktop() {
           </motion.a>
 
           <motion.a
-            href="https://facebook.com"
+            href="https://www.facebook.com/share/17NR1KifEt"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
@@ -142,7 +142,7 @@ export default function ComingSoonDesktop() {
           </motion.a>
 
           <motion.a
-            href="https://tiktok.com"
+            href="https://www.tiktok.com/@lazeez_ae"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
@@ -168,7 +168,7 @@ export default function ComingSoonDesktop() {
           </motion.a>
 
           <motion.a
-            href="https://Linkedin.com"
+            href="https://www.linkedin.com/company/lazeezae/"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
@@ -181,7 +181,7 @@ export default function ComingSoonDesktop() {
           </motion.a>
 
           <motion.a
-            href="https://Threads.com"
+            href="hhttps://www.threads.com/@lazeez__ae"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
