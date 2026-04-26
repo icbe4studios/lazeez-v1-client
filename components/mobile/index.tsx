@@ -2,6 +2,14 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { FaThreads } from "react-icons/fa6";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTiktok,
+  FaYoutube,
+} from "react-icons/fa";
 
 export default function ComingSoonMobile() {
   return (
@@ -97,7 +105,99 @@ export default function ComingSoonMobile() {
         </motion.div>
       </div>
 
-      <div className="mt-auto flex items-center justify-center gap-2 pb-6 md:pb-0 overflow-hidden">
+      <motion.div
+        className="flex items-center gap-4"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.6 }}
+      >
+        <motion.div
+          className="flex items-center gap-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+        >
+          <motion.a
+            href="https://www.instagram.com/lazeez__ae"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white rounded-full"
+          >
+            <div className="w-8 h-8 rounded-full flex items-center justify-center text-[#804097] text-lg">
+              <FaInstagram />
+            </div>
+          </motion.a>
+
+          <motion.a
+            href="https://www.facebook.com/share/17NR1KifEt"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white rounded-full"
+          >
+            <div className="w-8 h-8 rounded-full flex items-center justify-center text-[#804097] text-lg">
+              <FaFacebookF />
+            </div>
+          </motion.a>
+
+          <motion.a
+            href="https://www.tiktok.com/@lazeez_ae"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white rounded-full"
+          >
+            <div className="w-8 h-8 rounded-full flex items-center justify-center text-[#804097] text-lg">
+              <FaTiktok />
+            </div>
+          </motion.a>
+
+          <motion.a
+            href="https://youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white rounded-full"
+          >
+            <div className="w-8 h-8 rounded-full flex items-center justify-center text-[#804097] text-lg">
+              <FaYoutube />
+            </div>
+          </motion.a>
+
+          <motion.a
+            href="https://www.linkedin.com/company/lazeezae/"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white rounded-full"
+          >
+            <div className="w-8 h-8 rounded-full flex items-center justify-center text-[#804097] text-lg">
+              <FaLinkedinIn />
+            </div>
+          </motion.a>
+
+          <motion.a
+            href="hhttps://www.threads.com/@lazeez__ae"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white rounded-full"
+          >
+            <div className="w-8 h-8 rounded-full flex items-center justify-center text-[#804097] text-lg">
+              <FaThreads />
+            </div>
+          </motion.a>
+        </motion.div>
+      </motion.div>
+
+      <div className="mt-auto flex items-center justify-center gap-2 py-14 overflow-hidden">
         <motion.div
           initial={{ x: -60, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
