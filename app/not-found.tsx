@@ -43,7 +43,7 @@ export default function NotFoundPage() {
         </Link>
       </div>
 
-      <div className="mb-6">
+      <div className="my-6">
         <Image
           src="/brand-logo-not-found.png"
           alt="Brand Logo"
