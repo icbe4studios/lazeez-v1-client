@@ -118,7 +118,7 @@ export default function ComingSoonMobile() {
           transition={{ delay: 0.6 }}
         >
           <motion.a
-            href="https://www.instagram.com/lazeez__ae"
+            href="https://www.instagram.com/lazeez.dxb"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
@@ -131,7 +131,7 @@ export default function ComingSoonMobile() {
           </motion.a>
 
           <motion.a
-            href="https://www.facebook.com/share/17NR1KifEt"
+            href="https://www.facebook.com/lazeez.dxb"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
@@ -183,7 +183,7 @@ export default function ComingSoonMobile() {
           </motion.a>
 
           <motion.a
-            href="https://www.threads.com/@lazeez__ae"
+            href="https://www.threads.com/@lazeez.dxb"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
